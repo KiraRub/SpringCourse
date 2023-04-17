@@ -14,11 +14,11 @@
 
     <bean id="myPerson"
       class="Spring_introduction.Person">
-    <property name="pet" ref="myPet"/>
+        <property name="pet" ref="myPet"></property>
+    <property name="surname" value="Rubin"></property>
+        <property name="age" value="27"></property>
+    </bean>
 
 
-
-
-</bean>
 
 </beans>

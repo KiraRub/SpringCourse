@@ -9,6 +9,7 @@ public class Test3 {
         //Pet pet = Context.getBean("myPet", Pet.class);//Получаем из контейнера объект питомца
         Person person = Context.getBean("myPerson", Person.class);//Получаем из контейнера объект человека
         person.CallYourPet();//Вызов метода питомца из класса человека
+        System.out.println(person.getAge()+" "+person.getSurname());
         Context.close();//Закрытие бина
     }
 }
