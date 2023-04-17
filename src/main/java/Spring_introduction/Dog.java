@@ -13,12 +13,18 @@ public class Dog implements Pet {
         System.out.println("Bow-wow");
     }
 
-    public String getName() {
-        return name;
+    public void init(){
+        System.out.println("Class Dog: initialization method");
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public void destroy(){
+        System.out.println("Class Dog: destroy method");
     }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
 }
