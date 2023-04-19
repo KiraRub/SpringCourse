@@ -1,22 +1,27 @@
 package Spring_introduction;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class Dog implements Pet {
-    private String name;
+    //    private String name;
     public Dog() {
         System.out.println("Dog bean is created!");
     }
 
 
-
     @Override
-    public void say(){
+    public void say() {
         System.out.println("Bow-wow");
     }
 
-    public void init(){
+    public void init() {
         System.out.println("Class Dog: initialization method");
     }
-    public void destroy(){
+
+    public void destroy() {
         System.out.println("Class Dog: destroy method");
     }
 //    public String getName() {
