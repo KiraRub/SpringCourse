@@ -10,7 +10,7 @@ public class Test5 {
 
 //        Dog yourDog = context.getBean("myPet", Dog.class);
 //        myDog.say();
-        myDog.destroy();
+//        myDog.destroy();
         context.close();
     }
 }

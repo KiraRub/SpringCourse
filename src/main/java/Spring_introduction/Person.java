@@ -3,6 +3,7 @@ package Spring_introduction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
@@ -29,7 +30,7 @@ public class Person {
     }
 
     @Autowired
-    @Qualifier("dog")
+    @Qualifier("catBean")
     public void setPet(Pet pet) {
         System.out.println("Class Person: set pet");
         this.pet = pet;
