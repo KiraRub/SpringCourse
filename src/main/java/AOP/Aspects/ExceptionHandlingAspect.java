@@ -12,7 +12,7 @@ public class ExceptionHandlingAspect {
     @Before("AOP.Aspects.MyPointcuts.AllAddMethods()")
     public void beforeAddExceptionHandlingAdvice() {
 
-        System.out.println("beforeGetExceptionHandlingAdvice: ловим/обрабатываем" + "исключение при попытке получить книгу или журнал");
+        System.out.println("beforeGetExceptionHandlingAdvice: ловим/обрабатываем " + "исключение при попытке получить книгу или журнал");
         System.out.println("-----------------------------");
     }
 

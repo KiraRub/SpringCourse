@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 
 public class MyPointcuts {
-    @Pointcut("execution(* add*(..))")
+    @Pointcut("execution(* abc*(..))")
     public void AllAddMethods() {
     }
 }
