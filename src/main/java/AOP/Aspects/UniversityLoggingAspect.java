@@ -17,8 +17,10 @@ public class UniversityLoggingAspect {
     }
 
     @AfterReturning(pointcut = "execution(* getStudents(..))", returning = "students")
+//После AfterReturning можно изменять данные в методе который закончился хорошо, но ещё не вернул результат
     public void AfterReturningGetStudentsLoggingAdvice(List<Student> students) {
         Student firstStudent = students.get(0);
+        //НИЖЕ КОД КОТОРЫЙ ОТРАБАТЫВАЕТСЯ ПОСЛЕ МЕТОДА getStudent, тут происходит изменение данных на выходе.
         String nameSurname = firstStudent.getNameSurname();
         nameSurname = "Mr." + nameSurname;
         firstStudent.setNameSurname(nameSurname);
