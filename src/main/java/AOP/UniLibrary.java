@@ -2,7 +2,7 @@ package AOP;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Library")
 public class UniLibrary extends AbstractLibrary {
 
     public void getBook() {
@@ -33,8 +33,8 @@ public class UniLibrary extends AbstractLibrary {
         System.out.println("-----------------------------");
     }
 
-    public void returnBook() {
+    public String returnBook() {
         System.out.println("Мы возвращаем книгу в UniLibrary");
-        System.out.println("-----------------------------");
+        return "Война и мир";
     }
 }
